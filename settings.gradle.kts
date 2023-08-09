@@ -13,6 +13,7 @@ dependencyResolutionManagement {
     }
 }
 
+
 rootProject.name = "BisquitMegatoolLibrary"
 include(":app")
 include(":BisquitMegatool")
