@@ -32,4 +32,4 @@ appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "a
 androidApplication = { id = "com.android.application", version.ref = "agp" }
 kotlinAndroid = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
 androidLibrary = { id = "com.android.library", version.ref = "agp" }
-
+maven = { id = "maven"}
