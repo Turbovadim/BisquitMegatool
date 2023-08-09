@@ -2,7 +2,24 @@
 plugins {
     alias(libs.plugins.androidLibrary)
     alias(libs.plugins.kotlinAndroid)
+    id("maven-publish")
 }
+
+publishing {
+    publications {
+        register<MavenPublication>("release") {
+            groupId = "ru.turbovadim.bisquitmegatool"
+            artifactId = "demo-simple-android-lib"
+            version = "0.0.3"
+
+            afterEvaluate {
+                from(components["release"])
+            }
+        }
+    }
+}
+
+
 
 android {
     namespace = "net.turbovadim.bisquitmegatool"

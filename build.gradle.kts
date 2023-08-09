@@ -4,13 +4,11 @@ plugins {
     alias(libs.plugins.androidApplication) apply false
     alias(libs.plugins.kotlinAndroid) apply false
     alias(libs.plugins.androidLibrary) apply false
-    `maven-publish`
+    id("maven-publish")
 }
-
+true // Needed to make the Suppress annotation work for the plugins block
 buildscript {
     dependencies {
         classpath ("com.android.tools.build:gradle:8.2")
     }
 }
-
-true // Needed to make the Suppress annotation work for the plugins block
