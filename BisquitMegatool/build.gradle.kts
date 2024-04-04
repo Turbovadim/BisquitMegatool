@@ -1,15 +1,14 @@
-@Suppress("DSL_SCOPE_VIOLATION") // TODO: Remove once KTIJ-19369 is fixed
 plugins {
     alias(libs.plugins.androidLibrary)
     alias(libs.plugins.kotlinAndroid)
-    id("maven-publish")
+    `maven-publish`
 }
 
 publishing {
     publications {
         register<MavenPublication>("release") {
             groupId = "ru.turbovadim.bisquitmegatool"
-            artifactId = "demo-simple-android-lib"
+            artifactId = "bisquitmegatool"
             version = "0.0.3"
 
             afterEvaluate {
